@@ -1,0 +1,110 @@
+* {
+    margin:0 ;
+    padding:0;
+}
+
+body {
+    background-color: black;
+}
+
+
+.item {
+    width: 1268px;
+    height: 100%;
+    max-width: 90%;
+    text-align: center;
+    max-height: 100%;
+    float:left;
+}
+
+.item img {
+    width: 1268px;
+    height:100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#swipe_container {
+    width: 12680px;
+    /*max-width: 900%;*/
+}
+#container {
+    margin: 0 auto;
+    width: 1268px;
+    height: 100%;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#indicator {
+    position: absolute;
+    bottom: 0px !important;
+    z-index: 2 !important;
+    height: 1.5em;
+    width: 99%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: contain;
+}
+.indicator {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    margin: 0.2em;
+    background-color: orange !important;
+    opacity: 0.4
+}
+.indicatorActive {
+    opacity: 1
+}
+
+
+#back div, #forward div {
+    background: url('img/click_left.png') center no-repeat;
+    bottom: 0;
+    height: 23px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 14px;
+}
+.rotate {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 6px;
+}
+
+a {
+    top: 50%;
+    height: 77px;
+    padding: 0;
+    position: absolute;
+    width: 32px;
+    z-index: 1;
+    /*margin: 0 5px;*/
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    cursor: pointer;
+    display: inline-block;
+    color: #aaa;
+}
+
+a:hover {
+    border: 1px solid #191919;
+    color: #bbb;
+}
